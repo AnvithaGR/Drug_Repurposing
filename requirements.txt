@@ -1,0 +1,6 @@
+fastapi
+uvicorn[standard]
+spacy
+networkx
+scikit-learn
+flask
