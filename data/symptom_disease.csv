@@ -1,0 +1,331 @@
+symptoms,disease
+"fever,cough,shortness of breath,fatigue",COVID-19
+"fever,dry cough,loss of taste,loss of smell",COVID-19
+"sore throat,runny nose,headache,muscle pain",COVID-19
+"chills,nausea,vomiting,diarrhea",COVID-19
+"loss of appetite,congestion,sneezing",COVID-19
+"memory loss,confusion,difficulty performing familiar tasks",Alzheimer's Disease
+"forgetfulness,disorientation,mood swings",Alzheimer's Disease
+"language problems,misplacing things,poor judgment",Alzheimer's Disease
+"withdrawal from social activities,personality changes",Alzheimer's Disease
+difficulty planning or solving problems,Alzheimer's Disease
+"increased thirst,frequent urination,extreme hunger",Diabetes
+"unexplained weight loss,fatigue,blurred vision",Diabetes
+"slow-healing sores,frequent infections",Diabetes
+"tingling in hands or feet,dry skin",Diabetes
+"excessive thirst,weight loss,fatigue",Diabetes
+"chest pain,shortness of breath,pain in arms/shoulders",Heart Disease
+"fatigue,fast heartbeat,shortness of breath",Heart Disease
+"dizziness,lightheadedness,fainting",Heart Disease
+"swelling in legs,ankles,or feet",Heart Disease
+"tightness in chest,upper body discomfort",Heart Disease
+"persistent cough,coughing up blood,chest pain",Lung Cancer
+"weight loss,bone pain,headache",Lung Cancer
+"hoarseness,shortness of breath,wheezing",Lung Cancer
+feeling very tired or weak,Lung Cancer
+recurrent infections like bronchitis,Lung Cancer
+"joint pain,stiffness,swelling",Arthritis
+"decreased range of motion,redness over joints",Arthritis
+"stiffness in the morning,warmth around joints",Arthritis
+"chronic pain,joint deformation",Arthritis
+"headache,nausea,sensitivity to light",Migraine
+"throbbing pain,vomiting,blurred vision",Migraine
+"aura,sensitivity to sound,dizziness",Migraine
+"pain on one side of head,neck stiffness",Migraine
+"fever,cough,shortness of breath,fatigue",COVID-19
+"fever,dry cough,loss of taste,loss of smell",COVID-19
+"sore throat,runny nose,headache,muscle pain",COVID-19
+"chills,nausea,vomiting,diarrhea",COVID-19
+"loss of appetite,congestion,sneezing",COVID-19
+"memory loss,confusion,difficulty performing familiar tasks",Alzheimer's Disease
+"forgetfulness,disorientation,mood swings",Alzheimer's Disease
+"language problems,misplacing things,poor judgment",Alzheimer's Disease
+"withdrawal from social activities,personality changes",Alzheimer's Disease
+difficulty planning or solving problems,Alzheimer's Disease
+"increased thirst,frequent urination,extreme hunger",Diabetes
+"unexplained weight loss,fatigue,blurred vision",Diabetes
+"slow-healing sores,frequent infections",Diabetes
+"tingling in hands or feet,dry skin",Diabetes
+"excessive thirst,weight loss,fatigue",Diabetes
+"chest pain,shortness of breath,pain in arms/shoulders",Heart Disease
+"fatigue,fast heartbeat,shortness of breath",Heart Disease
+"dizziness,lightheadedness,fainting",Heart Disease
+"swelling in legs,ankles,or feet",Heart Disease
+"tightness in chest,upper body discomfort",Heart Disease
+"persistent cough,coughing up blood,chest pain",Lung Cancer
+"weight loss,bone pain,headache",Lung Cancer
+"hoarseness,shortness of breath,wheezing",Lung Cancer
+feeling very tired or weak,Lung Cancer
+recurrent infections like bronchitis,Lung Cancer
+"joint pain,stiffness,swelling",Arthritis
+"decreased range of motion,redness over joints",Arthritis
+"stiffness in the morning,warmth around joints",Arthritis
+"chronic pain,joint deformation",Arthritis
+"headache,nausea,sensitivity to light",Migraine
+"throbbing pain,vomiting,blurred vision",Migraine
+"aura,sensitivity to sound,dizziness",Migraine
+"pain on one side of head,neck stiffness",Migraine
+"fever,cough,shortness of breath,fatigue",COVID-19
+"fever,dry cough,loss of taste,loss of smell",COVID-19
+"sore throat,runny nose,headache,muscle pain",COVID-19
+"chills,nausea,vomiting,diarrhea",COVID-19
+"loss of appetite,congestion,sneezing",COVID-19
+"memory loss,confusion,difficulty performing familiar tasks",Alzheimer's Disease
+"forgetfulness,disorientation,mood swings",Alzheimer's Disease
+"language problems,misplacing things,poor judgment",Alzheimer's Disease
+"withdrawal from social activities,personality changes",Alzheimer's Disease
+difficulty planning or solving problems,Alzheimer's Disease
+"increased thirst,frequent urination,extreme hunger",Diabetes
+"unexplained weight loss,fatigue,blurred vision",Diabetes
+"slow-healing sores,frequent infections",Diabetes
+"tingling in hands or feet,dry skin",Diabetes
+"excessive thirst,weight loss,fatigue",Diabetes
+"chest pain,shortness of breath,pain in arms/shoulders",Heart Disease
+"fatigue,fast heartbeat,shortness of breath",Heart Disease
+"dizziness,lightheadedness,fainting",Heart Disease
+"swelling in legs,ankles,or feet",Heart Disease
+"tightness in chest,upper body discomfort",Heart Disease
+"persistent cough,coughing up blood,chest pain",Lung Cancer
+"weight loss,bone pain,headache",Lung Cancer
+"hoarseness,shortness of breath,wheezing",Lung Cancer
+feeling very tired or weak,Lung Cancer
+recurrent infections like bronchitis,Lung Cancer
+"joint pain,stiffness,swelling",Arthritis
+"decreased range of motion,redness over joints",Arthritis
+"stiffness in the morning,warmth around joints",Arthritis
+"chronic pain,joint deformation",Arthritis
+"headache,nausea,sensitivity to light",Migraine
+"throbbing pain,vomiting,blurred vision",Migraine
+"aura,sensitivity to sound,dizziness",Migraine
+"pain on one side of head,neck stiffness",Migraine
+"fever,cough,shortness of breath,fatigue",COVID-19
+"fever,dry cough,loss of taste,loss of smell",COVID-19
+"sore throat,runny nose,headache,muscle pain",COVID-19
+"chills,nausea,vomiting,diarrhea",COVID-19
+"loss of appetite,congestion,sneezing",COVID-19
+"memory loss,confusion,difficulty performing familiar tasks",Alzheimer's Disease
+"forgetfulness,disorientation,mood swings",Alzheimer's Disease
+"language problems,misplacing things,poor judgment",Alzheimer's Disease
+"withdrawal from social activities,personality changes",Alzheimer's Disease
+difficulty planning or solving problems,Alzheimer's Disease
+"increased thirst,frequent urination,extreme hunger",Diabetes
+"unexplained weight loss,fatigue,blurred vision",Diabetes
+"slow-healing sores,frequent infections",Diabetes
+"tingling in hands or feet,dry skin",Diabetes
+"excessive thirst,weight loss,fatigue",Diabetes
+"chest pain,shortness of breath,pain in arms/shoulders",Heart Disease
+"fatigue,fast heartbeat,shortness of breath",Heart Disease
+"dizziness,lightheadedness,fainting",Heart Disease
+"swelling in legs,ankles,or feet",Heart Disease
+"tightness in chest,upper body discomfort",Heart Disease
+"persistent cough,coughing up blood,chest pain",Lung Cancer
+"weight loss,bone pain,headache",Lung Cancer
+"hoarseness,shortness of breath,wheezing",Lung Cancer
+feeling very tired or weak,Lung Cancer
+recurrent infections like bronchitis,Lung Cancer
+"joint pain,stiffness,swelling",Arthritis
+"decreased range of motion,redness over joints",Arthritis
+"stiffness in the morning,warmth around joints",Arthritis
+"chronic pain,joint deformation",Arthritis
+"headache,nausea,sensitivity to light",Migraine
+"throbbing pain,vomiting,blurred vision",Migraine
+"aura,sensitivity to sound,dizziness",Migraine
+"pain on one side of head,neck stiffness",Migraine
+"fever,cough,shortness of breath,fatigue",COVID-19
+"fever,dry cough,loss of taste,loss of smell",COVID-19
+"sore throat,runny nose,headache,muscle pain",COVID-19
+"chills,nausea,vomiting,diarrhea",COVID-19
+"loss of appetite,congestion,sneezing",COVID-19
+"memory loss,confusion,difficulty performing familiar tasks",Alzheimer's Disease
+"forgetfulness,disorientation,mood swings",Alzheimer's Disease
+"language problems,misplacing things,poor judgment",Alzheimer's Disease
+"withdrawal from social activities,personality changes",Alzheimer's Disease
+difficulty planning or solving problems,Alzheimer's Disease
+"increased thirst,frequent urination,extreme hunger",Diabetes
+"unexplained weight loss,fatigue,blurred vision",Diabetes
+"slow-healing sores,frequent infections",Diabetes
+"tingling in hands or feet,dry skin",Diabetes
+"excessive thirst,weight loss,fatigue",Diabetes
+"chest pain,shortness of breath,pain in arms/shoulders",Heart Disease
+"fatigue,fast heartbeat,shortness of breath",Heart Disease
+"dizziness,lightheadedness,fainting",Heart Disease
+"swelling in legs,ankles,or feet",Heart Disease
+"tightness in chest,upper body discomfort",Heart Disease
+"persistent cough,coughing up blood,chest pain",Lung Cancer
+"weight loss,bone pain,headache",Lung Cancer
+"hoarseness,shortness of breath,wheezing",Lung Cancer
+feeling very tired or weak,Lung Cancer
+recurrent infections like bronchitis,Lung Cancer
+"joint pain,stiffness,swelling",Arthritis
+"decreased range of motion,redness over joints",Arthritis
+"stiffness in the morning,warmth around joints",Arthritis
+"chronic pain,joint deformation",Arthritis
+"headache,nausea,sensitivity to light",Migraine
+"throbbing pain,vomiting,blurred vision",Migraine
+"aura,sensitivity to sound,dizziness",Migraine
+"pain on one side of head,neck stiffness",Migraine
+"fever,cough,shortness of breath,fatigue",COVID-19
+"fever,dry cough,loss of taste,loss of smell",COVID-19
+"sore throat,runny nose,headache,muscle pain",COVID-19
+"chills,nausea,vomiting,diarrhea",COVID-19
+"loss of appetite,congestion,sneezing",COVID-19
+"memory loss,confusion,difficulty performing familiar tasks",Alzheimer's Disease
+"forgetfulness,disorientation,mood swings",Alzheimer's Disease
+"language problems,misplacing things,poor judgment",Alzheimer's Disease
+"withdrawal from social activities,personality changes",Alzheimer's Disease
+difficulty planning or solving problems,Alzheimer's Disease
+"increased thirst,frequent urination,extreme hunger",Diabetes
+"unexplained weight loss,fatigue,blurred vision",Diabetes
+"slow-healing sores,frequent infections",Diabetes
+"tingling in hands or feet,dry skin",Diabetes
+"excessive thirst,weight loss,fatigue",Diabetes
+"chest pain,shortness of breath,pain in arms/shoulders",Heart Disease
+"fatigue,fast heartbeat,shortness of breath",Heart Disease
+"dizziness,lightheadedness,fainting",Heart Disease
+"swelling in legs,ankles,or feet",Heart Disease
+"tightness in chest,upper body discomfort",Heart Disease
+"persistent cough,coughing up blood,chest pain",Lung Cancer
+"weight loss,bone pain,headache",Lung Cancer
+"hoarseness,shortness of breath,wheezing",Lung Cancer
+feeling very tired or weak,Lung Cancer
+recurrent infections like bronchitis,Lung Cancer
+"joint pain,stiffness,swelling",Arthritis
+"decreased range of motion,redness over joints",Arthritis
+"stiffness in the morning,warmth around joints",Arthritis
+"chronic pain,joint deformation",Arthritis
+"headache,nausea,sensitivity to light",Migraine
+"throbbing pain,vomiting,blurred vision",Migraine
+"aura,sensitivity to sound,dizziness",Migraine
+"pain on one side of head,neck stiffness",Migraine
+"fever,cough,shortness of breath,fatigue",COVID-19
+"fever,dry cough,loss of taste,loss of smell",COVID-19
+"sore throat,runny nose,headache,muscle pain",COVID-19
+"chills,nausea,vomiting,diarrhea",COVID-19
+"loss of appetite,congestion,sneezing",COVID-19
+"memory loss,confusion,difficulty performing familiar tasks",Alzheimer's Disease
+"forgetfulness,disorientation,mood swings",Alzheimer's Disease
+"language problems,misplacing things,poor judgment",Alzheimer's Disease
+"withdrawal from social activities,personality changes",Alzheimer's Disease
+difficulty planning or solving problems,Alzheimer's Disease
+"increased thirst,frequent urination,extreme hunger",Diabetes
+"unexplained weight loss,fatigue,blurred vision",Diabetes
+"slow-healing sores,frequent infections",Diabetes
+"tingling in hands or feet,dry skin",Diabetes
+"excessive thirst,weight loss,fatigue",Diabetes
+"chest pain,shortness of breath,pain in arms/shoulders",Heart Disease
+"fatigue,fast heartbeat,shortness of breath",Heart Disease
+"dizziness,lightheadedness,fainting",Heart Disease
+"swelling in legs,ankles,or feet",Heart Disease
+"tightness in chest,upper body discomfort",Heart Disease
+"persistent cough,coughing up blood,chest pain",Lung Cancer
+"weight loss,bone pain,headache",Lung Cancer
+"hoarseness,shortness of breath,wheezing",Lung Cancer
+feeling very tired or weak,Lung Cancer
+recurrent infections like bronchitis,Lung Cancer
+"joint pain,stiffness,swelling",Arthritis
+"decreased range of motion,redness over joints",Arthritis
+"stiffness in the morning,warmth around joints",Arthritis
+"chronic pain,joint deformation",Arthritis
+"headache,nausea,sensitivity to light",Migraine
+"throbbing pain,vomiting,blurred vision",Migraine
+"aura,sensitivity to sound,dizziness",Migraine
+"pain on one side of head,neck stiffness",Migraine
+"fever,cough,shortness of breath,fatigue",COVID-19
+"fever,dry cough,loss of taste,loss of smell",COVID-19
+"sore throat,runny nose,headache,muscle pain",COVID-19
+"chills,nausea,vomiting,diarrhea",COVID-19
+"loss of appetite,congestion,sneezing",COVID-19
+"memory loss,confusion,difficulty performing familiar tasks",Alzheimer's Disease
+"forgetfulness,disorientation,mood swings",Alzheimer's Disease
+"language problems,misplacing things,poor judgment",Alzheimer's Disease
+"withdrawal from social activities,personality changes",Alzheimer's Disease
+difficulty planning or solving problems,Alzheimer's Disease
+"increased thirst,frequent urination,extreme hunger",Diabetes
+"unexplained weight loss,fatigue,blurred vision",Diabetes
+"slow-healing sores,frequent infections",Diabetes
+"tingling in hands or feet,dry skin",Diabetes
+"excessive thirst,weight loss,fatigue",Diabetes
+"chest pain,shortness of breath,pain in arms/shoulders",Heart Disease
+"fatigue,fast heartbeat,shortness of breath",Heart Disease
+"dizziness,lightheadedness,fainting",Heart Disease
+"swelling in legs,ankles,or feet",Heart Disease
+"tightness in chest,upper body discomfort",Heart Disease
+"persistent cough,coughing up blood,chest pain",Lung Cancer
+"weight loss,bone pain,headache",Lung Cancer
+"hoarseness,shortness of breath,wheezing",Lung Cancer
+feeling very tired or weak,Lung Cancer
+recurrent infections like bronchitis,Lung Cancer
+"joint pain,stiffness,swelling",Arthritis
+"decreased range of motion,redness over joints",Arthritis
+"stiffness in the morning,warmth around joints",Arthritis
+"chronic pain,joint deformation",Arthritis
+"headache,nausea,sensitivity to light",Migraine
+"throbbing pain,vomiting,blurred vision",Migraine
+"aura,sensitivity to sound,dizziness",Migraine
+"pain on one side of head,neck stiffness",Migraine
+"fever,cough,shortness of breath,fatigue",COVID-19
+"fever,dry cough,loss of taste,loss of smell",COVID-19
+"sore throat,runny nose,headache,muscle pain",COVID-19
+"chills,nausea,vomiting,diarrhea",COVID-19
+"loss of appetite,congestion,sneezing",COVID-19
+"memory loss,confusion,difficulty performing familiar tasks",Alzheimer's Disease
+"forgetfulness,disorientation,mood swings",Alzheimer's Disease
+"language problems,misplacing things,poor judgment",Alzheimer's Disease
+"withdrawal from social activities,personality changes",Alzheimer's Disease
+difficulty planning or solving problems,Alzheimer's Disease
+"increased thirst,frequent urination,extreme hunger",Diabetes
+"unexplained weight loss,fatigue,blurred vision",Diabetes
+"slow-healing sores,frequent infections",Diabetes
+"tingling in hands or feet,dry skin",Diabetes
+"excessive thirst,weight loss,fatigue",Diabetes
+"chest pain,shortness of breath,pain in arms/shoulders",Heart Disease
+"fatigue,fast heartbeat,shortness of breath",Heart Disease
+"dizziness,lightheadedness,fainting",Heart Disease
+"swelling in legs,ankles,or feet",Heart Disease
+"tightness in chest,upper body discomfort",Heart Disease
+"persistent cough,coughing up blood,chest pain",Lung Cancer
+"weight loss,bone pain,headache",Lung Cancer
+"hoarseness,shortness of breath,wheezing",Lung Cancer
+feeling very tired or weak,Lung Cancer
+recurrent infections like bronchitis,Lung Cancer
+"joint pain,stiffness,swelling",Arthritis
+"decreased range of motion,redness over joints",Arthritis
+"stiffness in the morning,warmth around joints",Arthritis
+"chronic pain,joint deformation",Arthritis
+"headache,nausea,sensitivity to light",Migraine
+"throbbing pain,vomiting,blurred vision",Migraine
+"aura,sensitivity to sound,dizziness",Migraine
+"pain on one side of head,neck stiffness",Migraine
+"fever,cough,shortness of breath,fatigue",COVID-19
+"fever,dry cough,loss of taste,loss of smell",COVID-19
+"sore throat,runny nose,headache,muscle pain",COVID-19
+"chills,nausea,vomiting,diarrhea",COVID-19
+"loss of appetite,congestion,sneezing",COVID-19
+"memory loss,confusion,difficulty performing familiar tasks",Alzheimer's Disease
+"forgetfulness,disorientation,mood swings",Alzheimer's Disease
+"language problems,misplacing things,poor judgment",Alzheimer's Disease
+"withdrawal from social activities,personality changes",Alzheimer's Disease
+difficulty planning or solving problems,Alzheimer's Disease
+"increased thirst,frequent urination,extreme hunger",Diabetes
+"unexplained weight loss,fatigue,blurred vision",Diabetes
+"slow-healing sores,frequent infections",Diabetes
+"tingling in hands or feet,dry skin",Diabetes
+"excessive thirst,weight loss,fatigue",Diabetes
+"chest pain,shortness of breath,pain in arms/shoulders",Heart Disease
+"fatigue,fast heartbeat,shortness of breath",Heart Disease
+"dizziness,lightheadedness,fainting",Heart Disease
+"swelling in legs,ankles,or feet",Heart Disease
+"tightness in chest,upper body discomfort",Heart Disease
+"persistent cough,coughing up blood,chest pain",Lung Cancer
+"weight loss,bone pain,headache",Lung Cancer
+"hoarseness,shortness of breath,wheezing",Lung Cancer
+feeling very tired or weak,Lung Cancer
+recurrent infections like bronchitis,Lung Cancer
+"joint pain,stiffness,swelling",Arthritis
+"decreased range of motion,redness over joints",Arthritis
+"stiffness in the morning,warmth around joints",Arthritis
+"chronic pain,joint deformation",Arthritis
+"headache,nausea,sensitivity to light",Migraine
+"throbbing pain,vomiting,blurred vision",Migraine
+"aura,sensitivity to sound,dizziness",Migraine
+"pain on one side of head,neck stiffness",Migraine

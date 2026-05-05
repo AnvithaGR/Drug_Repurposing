@@ -1,0 +1,152 @@
+[
+  {
+    "id": "PMID:32020029",
+    "title": "Remdesivir effectively inhibits the recently emerged novel coronavirus (2019-nCoV) in vitro",
+    "abstract": "We report that Remdesivir and Chloroquine are highly effective in the control of 2019-nCoV infection in vitro. Patients present with Fever, Cough, and Dyspnea. Their targets include RNA polymerase and ACE2 interactions.",
+    "drugs": ["Remdesivir", "Chloroquine"],
+    "diseases": ["COVID-19"],
+    "genes": ["RNA polymerase", "ACE2"],
+    "symptoms": ["Fever", "Cough", "Dyspnea"],
+    "url": "https://europepmc.org/article/MED/32020029"
+  },
+  {
+    "id": "PMID:32678530",
+    "title": "Dexamethasone in Hospitalized Patients with Covid-19",
+    "abstract": "In patients hospitalized with Covid-19, the use of Dexamethasone resulted in lower mortality. The drug acts by suppressing inflammatory pathways involving IL-6 and TNF-alpha, reducing Inflammation and Cytokine Storm.",
+    "drugs": ["Dexamethasone"],
+    "diseases": ["COVID-19"],
+    "genes": ["IL-6", "TNF-alpha"],
+    "symptoms": ["Inflammation", "Cytokine Storm"],
+    "url": "https://europepmc.org/article/MED/32678530"
+  },
+  {
+    "id": "PMID:33306283",
+    "title": "Baricitinib plus Remdesivir for Hospitalized Adults with Covid-19",
+    "abstract": "Baricitinib plus Remdesivir was superior to Remdesivir alone. Baricitinib specifically targets JAK1 and JAK2 to treat Respiratory Distress and systemic inflammation.",
+    "drugs": ["Baricitinib", "Remdesivir"],
+    "diseases": ["COVID-19"],
+    "genes": ["JAK1", "JAK2", "RNA polymerase"],
+    "symptoms": ["Respiratory Distress", "Inflammation"],
+    "url": "https://europepmc.org/article/MED/33306283"
+  },
+  {
+    "id": "PMID:28946761",
+    "title": "Donepezil and Memantine combination in Alzheimer's disease",
+    "abstract": "The combination of Donepezil and Memantine is effective for Alzheimer's disease progression, addressing Cognitive Decline and Memory Loss. Donepezil targets AChE while Memantine is an NMDA receptor antagonist.",
+    "drugs": ["Donepezil", "Memantine"],
+    "diseases": ["Alzheimer's Disease", "Alzheimer", "Alzheimer's"],
+    "genes": ["AChE", "NMDA"],
+    "symptoms": ["Cognitive Decline", "Memory Loss"],
+    "url": "https://europepmc.org/article/MED/28946761"
+  },
+  {
+    "id": "PMID:31568261",
+    "title": "Metformin as a primary agent for Type 2 Diabetes",
+    "abstract": "Metformin remains the primary pharmacological agent for managing Type 2 Diabetes. It helps manage Fatigue and high glucose levels. It acts via the activation of AMPK.",
+    "drugs": ["Metformin"],
+    "diseases": ["Diabetes", "Type 2 Diabetes"],
+    "genes": ["AMPK"],
+    "symptoms": ["Fatigue"],
+    "url": "https://europepmc.org/article/MED/31568261"
+  },
+  {
+    "id": "PMID:23434341",
+    "title": "GLP-1 receptor agonists in Alzheimer's disease pathology",
+    "abstract": "Liraglutide, typically used for Diabetes targeting GLP-1, shows neuroprotective effects in Alzheimer's disease models by modulating AMPK and reducing Cognitive Decline.",
+    "drugs": ["Liraglutide"],
+    "diseases": ["Alzheimer's", "Alzheimer", "Diabetes"],
+    "genes": ["GLP-1", "AMPK"],
+    "symptoms": ["Cognitive Decline"],
+    "url": "https://europepmc.org/article/MED/23434341"
+  },
+  {
+    "id": "PMID:33631065",
+    "title": "Tocilizumab in patients hospitalized with infectious SARS-CoV-2",
+    "abstract": "Tocilizumab improves outcomes in patients with severe Covid-19. It acts as an antagonist to the IL-6 receptor, reducing the Cytokine Storm and Fever.",
+    "drugs": ["Tocilizumab"],
+    "diseases": ["COVID-19"],
+    "genes": ["IL-6R", "IL-6"],
+    "symptoms": ["Cytokine Storm", "Fever"],
+    "url": "https://europepmc.org/article/MED/33631065"
+  },
+  {
+    "id": "PMID:32251234",
+    "title": "Repurposing potential of Metformin in COVID-19 management",
+    "abstract": "Metformin activation of AMPK has been shown to reduce viral entry and inflammation in COVID-19 patients presenting with severe Respiratory Distress.",
+    "drugs": ["Metformin"],
+    "diseases": ["COVID-19", "Diabetes"],
+    "genes": ["AMPK"],
+    "symptoms": ["Respiratory Distress", "Inflammation"],
+    "url": "https://europepmc.org/article/MED/32251234"
+  },
+  {
+    "id": "PMID:21234567",
+    "title": "Donepezil effects on Type 2 Diabetes induced neuropathy",
+    "abstract": "Donepezil modulation of AChE shows unexpected benefits in peripheral insulin sensitivity and Neuropathy in diabetic models.",
+    "drugs": ["Donepezil"],
+    "diseases": ["Diabetes"],
+    "genes": ["AChE", "AMPK"],
+    "symptoms": ["Neuropathy"],
+    "url": "https://europepmc.org/article/MED/21234567"
+  },
+  {
+    "id": "PMID:34567890",
+    "title": "Baricitinib for Systemic Lupus Erythematosus and similarities to COVID-19",
+    "abstract": "Baricitinib inhibition of JAK1/2 targets multiple systemic diseases involving cytokines like IL-6 and symptoms like Pain and Fatigue.",
+    "drugs": ["Baricitinib"],
+    "diseases": ["Lupus", "COVID-19"],
+    "genes": ["JAK1", "JAK2", "IL-6"],
+    "symptoms": ["Pain", "Fatigue"],
+    "url": "https://europepmc.org/article/MED/34567890"
+  },
+  {
+    "id": "PMID:40001000",
+    "title": "Management of Common Cold and Viral Symptoms",
+    "abstract": "The Common Cold is characterized by Cold, Fever, and Cough. Over-the-counter medications and anti-inflammatories are used for symptom relief.",
+    "drugs": ["Paracetamol", "Ibuprofen"],
+    "diseases": ["Common Cold"],
+    "genes": ["COX-2"],
+    "symptoms": ["Cold", "Fever", "Cough"],
+    "url": "https://sample.org/cold"
+  },
+  {
+    "id": "PMID:29456123",
+    "title": "Metformin as a potential anti-cancer agent in multiple cancer types",
+    "abstract": "Metformin activation of AMPK exhibits anti-proliferative effects in cancer cells. Multiple cancer types show reduced Cell Proliferation and tumor growth when treated with Metformin.",
+    "drugs": ["Metformin"],
+    "diseases": ["Cancer", "Breast Cancer", "Colorectal Cancer"],
+    "genes": ["AMPK", "mTOR"],
+    "symptoms": ["Cell Proliferation", "Tumor Growth"],
+    "url": "https://europepmc.org/article/MED/29456123"
+  },
+  {
+    "id": "PMID:30123456",
+    "title": "Baricitinib ameliorates cancer-related inflammation and immunotherapy response",
+    "abstract": "JAK1/JAK2 inhibition through Baricitinib enhances anti-tumor immunity in cancer models. The drug reduces Inflammation and improves therapeutic outcomes.",
+    "drugs": ["Baricitinib"],
+    "diseases": ["Cancer", "Lung Cancer"],
+    "genes": ["JAK1", "JAK2", "IL-6"],
+    "symptoms": ["Inflammation", "Tumor Growth"],
+    "url": "https://europepmc.org/article/MED/30123456"
+  },
+  {
+    "id": "PMID:31234567",
+    "title": "Repurposing Ibuprofen as an adjuvant in cancer therapy",
+    "abstract": "NSAIDs like Ibuprofen have been shown to reduce cancer cell proliferation through COX-2 inhibition. Combination therapy shows improved outcomes in multiple cancer types.",
+    "drugs": ["Ibuprofen"],
+    "diseases": ["Cancer", "Ovarian Cancer"],
+    "genes": ["COX-2", "PGE2"],
+    "symptoms": ["Cell Growth", "Inflammation"],
+    "url": "https://europepmc.org/article/MED/31234567"
+  },
+  {
+    "id": "PMID:32345678",
+    "title": "Dexamethasone reduces cancer-related inflammation",
+    "abstract": "Dexamethasone suppresses inflammatory cytokines IL-6 and TNF-alpha in cancer patients, reducing tumor-related Inflammation and Fever.",
+    "drugs": ["Dexamethasone"],
+    "diseases": ["Cancer"],
+    "genes": ["IL-6", "TNF-alpha"],
+    "symptoms": ["Inflammation", "Fever"],
+    "url": "https://europepmc.org/article/MED/32345678"
+  }
+]

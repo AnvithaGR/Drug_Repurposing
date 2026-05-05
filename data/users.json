@@ -1,0 +1,92 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "email": "admin@drug-repurposing.com",
+      "password_hash": "$argon2id$v=19$m=65536,t=3,p=4$ZkypNea8dw6BUKpVypmzNg$7BraxYgEB/uR3QUSDm5fWvKLdkJ4umxHEArJGnFjnb4",
+      "is_active": true,
+      "email_verified": true
+    },
+    {
+      "id": 2,
+      "username": "bhoomi",
+      "email": "bhoomi@gmail.com",
+      "password_hash": "$argon2id$v=19$m=65536,t=3,p=4$mfM+B+A8p9T6X6vVOseY8w$ZWVCTXQW+RhaoyJFKB3W0rWdpwM5kW/LyF0TOVQA7Dk",
+      "is_active": true,
+      "email_verified": true
+    },
+    {
+      "id": 3,
+      "username": "Bhoomika",
+      "email": "s.bhoomika2005@gmail.com",
+      "password_hash": "$argon2id$v=19$m=65536,t=3,p=4$m5NSihFCqHXu3btXyvmf0w$fP9SXp+eQcQpvuw4LKTz7Cr7Gc8FkAEoAR80V0KSS7M",
+      "is_active": true,
+      "email_verified": true
+    },
+    {
+      "id": 4,
+      "username": "Anvitha",
+      "email": "anvi@gmail.com",
+      "password_hash": "$argon2id$v=19$m=65536,t=3,p=4$2XsPQci5F4JwLuX8n1NKqQ$fQjGr+icVzHtuC79bkDKqc6IlFhg8sDJAwZ8LHEVtLA",
+      "is_active": true,
+      "email_verified": true
+    },
+    {
+      "id": 5,
+      "username": "anvitha",
+      "email": "anvigr@gmail.com",
+      "password_hash": "$argon2id$v=19$m=65536,t=3,p=4$DEGo9R6j1DrHOMe41zqndA$Rty8SMcJNK42/hzGIZvPrzJJXyg5ncME/doKdjaTS5k",
+      "is_active": true,
+      "email_verified": true
+    },
+    {
+      "id": 6,
+      "username": "bhoomika",
+      "email": "bhoomika@gmail.com",
+      "password_hash": "$argon2id$v=19$m=65536,t=3,p=4$c64VgpASIkQo5TznPGdsLQ$DRAJoHXn3X6l6M3aLeIe/TPG31BRXqL2iW45xTabmEQ",
+      "is_active": true,
+      "email_verified": true
+    },
+    {
+      "id": 7,
+      "username": "anvi",
+      "email": "anvitha@gmail.com",
+      "password_hash": "$argon2id$v=19$m=65536,t=3,p=4$qRUCQGjNubdWCuF87917Lw$JHhVv4Z3f+K9CU0wBQLZVgpfWRWC4qV0VKH1Ritq91s",
+      "is_active": true,
+      "email_verified": true
+    },
+    {
+      "id": 8,
+      "username": "anvit",
+      "email": "anvit@gmail.com",
+      "password_hash": "$argon2id$v=19$m=65536,t=3,p=4$nJMy5hxDCIEQovSes5bS+g$uhHMC8vqA+A8zkzAjBhm/9MFRECChnIVHpOXO5XgnuQ",
+      "is_active": true,
+      "email_verified": true
+    },
+    {
+      "id": 9,
+      "username": "bhoomikas",
+      "email": "bhoomikas@gmail.com",
+      "password_hash": "$argon2id$v=19$m=65536,t=3,p=4$jLFWipGydu69lzLGeE8phQ$27TaZYhdImLI0WIfq0WLYV2H7IPatfaFX29DLEtL/yM",
+      "is_active": true,
+      "email_verified": true
+    },
+    {
+      "id": 10,
+      "username": "chaitanya",
+      "email": "chai@gmail.com",
+      "password_hash": "$argon2id$v=19$m=65536,t=3,p=4$R8hZi/Eeg3Bu7f2/1/of4w$ErgRJvqPb1kFPeBCTH9RFzghTxJADIDamj+eIfeUmfA",
+      "is_active": true,
+      "email_verified": true
+    },
+    {
+      "id": 11,
+      "username": "Anvithashetty",
+      "email": "anvithasheety899@gmail.com",
+      "password_hash": "$argon2id$v=19$m=65536,t=3,p=4$gFDKmZOy9j5nTAlhrLXWug$UorN7nk0Keu6Zw6YHpLjpFc2IVsSmnrXp6HILYdkFqs",
+      "is_active": true,
+      "email_verified": true
+    }
+  ]
+}
