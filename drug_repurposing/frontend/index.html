@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI Multi-Agent Drug Repurposing</title>
+    <link rel="stylesheet" href="/static/style.css?v=4">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/vis-network@9.1.2/dist/vis-network.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/3d-force-graph"></script>
+  </head>
+  <body>
+    <div id="appContainer" class="container" style="display:none;">
+      <div class="header-row" style="display:flex; justify-content:space-between; align-items:flex-end;">
+        <div style="display:flex; align-items:center; gap: 1rem;">
+          <img src="/static/assets/logo.png" alt="App Logo" class="app-logo" style="width: 60px; height: 60px; border-radius: 12px; object-fit: cover; box-shadow: 0 0 15px rgba(99, 102, 241, 0.4);">
+          <div>
+            <h1>AI-Based Multi-Agent System for Drug Repurposing</h1>
+            <div class="subtitle">Multi-Agent Knowledge Graph Pipeline</div>
+          </div>
+        </div>
+        <div style="display:flex; gap:0.5rem; margin-bottom:2rem; align-items:center;">
+          <label style="color:#cbd5e1; font-size:0.85rem; display:flex; align-items:center; gap:0.4rem; margin-right: 1rem;">
+            <input type="checkbox" id="realDataToggle" checked> Use Demo Dataset
+          </label>
+          <button id="exportPdfBtn" class="logout-btn" style="display:none; color: #ef4444; border-color: #991b1b;"><i class="fa-solid fa-file-pdf"></i> Download Report (PDF)</button>
+          <button id="exportCsvBtn" class="logout-btn" style="display:none; color: #6ee7b7; border-color: #065f46;"><i class="fa-solid fa-file-csv"></i> Export CSV</button>
+          <button id="exportGraphBtn" class="logout-btn" style="display:none; color: #818cf8; border-color: #3730a3;"><i class="fa-solid fa-image"></i> Save Graph</button>
+          <button id="logoutBtn" class="logout-btn"><i class="fa-solid fa-right-from-bracket"></i> Logout</button>
+        </div>
+      </div>
+      
+      <div class="search-section glass-card">
+        <div style="display:flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+          <label id="searchLabel" style="color:var(--text-muted);">Enter Disease Name:</label>
+          <div style="display:flex; gap: 1rem; align-items:center;">
+            <select id="languageSelect" style="padding:0.4rem; border-radius:4px; background:#1e293b; color:#38bdf8; border:1px solid #38bdf8; cursor:pointer; font-size:0.85rem;">
+              <option value="en">🇬🇧 English</option>
+              <option value="es">🇪🇸 Español</option>
+              <option value="fr">🇫🇷 Français</option>
+              <option value="de">🇩🇪 Deutsch</option>
+              <option value="hi">🇮🇳 हिंदी</option>
+              <option value="ta">🇮🇳 Tamil</option>
+              <option value="kn">🇮🇳 Kannada</option>
+              <option value="ja">🇯🇵 日本語</option>
+              <option value="zh">🇨🇳 中文</option>
+            </select>
+            <label style="color:#38bdf8; font-size:0.85rem; cursor:pointer; display:flex; align-items:center; gap:0.4rem; user-select:none;">
+              <input type="checkbox" id="modeToggle"> <i class="fa-solid fa-stethoscope"></i> Symptom-to-Disease Mode
+            </label>
+          </div>
+        </div>
+        <div class="search-bar">
+          <input id="diseaseInput" placeholder="e.g., Alzheimer's Disease or Cancer" autocomplete="off" />
+          <button id="voiceBtn" type="button" style="display:flex; align-items:center; gap:0.5rem; padding:0.7rem 1.2rem; background:#10b981; border:1px solid #059669; border-radius:0.5rem; color:#fff; cursor:pointer; font-weight:500; transition:0.3s;" title="Click to speak disease name or symptom">
+            <i class="fa-solid fa-microphone"></i> Voice
+          </button>
+          <button id="searchBtn" style="display:flex; align-items:center; gap:0.5rem;">
+            <i class="fa-solid fa-wand-magic-sparkles"></i> Analyze <div id="spinner" class="spinner"></div>
+          </button>
+        </div>
+        <div id="voiceStatus" style="display:none; margin-top:0.5rem; padding:0.5rem; background:#1e293b; border-radius:4px; color:#fbbf24; font-size:0.85rem; text-align:center;">
+          <i class="fa-solid fa-microphone"></i> Listening...
+        </div>
+
+        <div id="history-container" style="margin-top:0.5rem; font-size: 0.85rem; color:#cbd5e1; display:none;">
+          Recent Searches: <span id="search-history-list" style="display:flex; gap:0.4rem; display:inline-flex;"></span>
+        </div>
+        <div id="chips" class="chips" style="margin-top: 1rem;">
+          <!-- Chips populated dynamically -->
+        </div>
+      </div>
+
+      <div id="pipeline-tracker" class="glass-card" style="display:none; margin-bottom: 2rem; padding: 1rem 1.5rem; text-align: center;">
+        <div style="display:flex; justify-content:space-between; align-items:center; color:var(--text-muted); font-size:0.9rem; font-weight:600;">
+          <div id="step1"><i class="fa-solid fa-circle" style="color:#475569;"></i> Agent 1: Retrieving</div>
+          <div id="step2"><i class="fa-solid fa-circle" style="color:#475569;"></i> Agent 2: Extracting</div>
+          <div id="step3"><i class="fa-solid fa-circle" style="color:#475569;"></i> Agent 3: Graph Building</div>
+          <div id="step4"><i class="fa-solid fa-circle" style="color:#475569;"></i> Agent 4: Predicting</div>
+        </div>
+      </div>
+
+      <section id="results">
+        <h2 id="analysis-title" style="text-align: center; margin-bottom: 2rem; color: #38bdf8; font-size: 1.8rem; border-bottom: 1px solid rgba(56, 189, 248, 0.3); padding-bottom: 1rem; display: none;">
+          Analysis for: <span id="selected-disease-name" style="color: #f8fafc;"></span>
+          <button id="ml-metrics-btn" onclick="openMlModal()" style="margin-left: 1rem; background:rgba(16, 185, 129, 0.2); color:#10b981; border:1px solid #10b981; padding:0.4rem 1rem; font-size:0.9rem; border-radius:30px; cursor:pointer;" title="View ML Classifier Diagnostics"><i class="fa-solid fa-chart-pie"></i> View ML Diagnostics</button>
+        </h2>
+        
+        <div id="summary-card" class="summary-container" style="display:none;">
+          <!-- Populated by JS -->
+        </div>
+
+        <div class="results-grid">
+          <!-- Section 1 -->
+          <div class="col glass-card">
+            <div class="agent-label"><i class="fa-solid fa-microscope"></i> Agent 2: Extraction</div>
+            <h2><i class="fa-solid fa-dna" style="color:#6ee7b7;"></i> 1. Extracted Information</h2>
+            <div style="margin-bottom: 0.5rem; font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase;">Drugs Found</div>
+            <ul id="drugs"></ul>
+
+            <div style="margin-bottom: 0.5rem; font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase;">Genes</div>
+            <ul id="genes"></ul>
+          </div>
+          
+          <!-- Section 2 -->
+          <div class="glass-card graph-container">
+            <div class="agent-label"><i class="fa-solid fa-project-diagram"></i> Agent 3: Graph Generator</div>
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
+              <h2><i class="fa-solid fa-network-wired" style="color:#818cf8;"></i> 2. Knowledge Graph</h2>
+              <button id="toggleGraph3d" class="chip" style="background:#818cf8; color:#fff; border:none; padding:0.4rem 1rem; cursor:pointer;"><i class="fa-solid fa-cube"></i> Switch to 3D View</button>
+            </div>
+            <div id="network" style="height: 500px; width: 100%;"></div>
+            <div id="graph-3d" style="height: 500px; width: 100%; display:none;"></div>
+            
+            <div id="graph-legend" class="graph-legend" style="position: absolute; bottom: 1rem; left: 1rem; background: rgba(15, 23, 42, 0.8); padding: 0.5rem; border-radius: 8px; font-size: 0.8rem; display:flex; gap: 1rem;">
+              <div><span style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#2563eb; margin-right:4px;"></span> Drug</div>
+              <div><span style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#059669; margin-right:4px;"></span> Gene</div>
+              <div><span style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#dc2626; margin-right:4px;"></span> Disease</div>
+            </div>
+
+            <div id="graph-sidebar" class="graph-sidebar">
+              <h3 id="sidebar-title">Node Details</h3>
+              <div id="sidebar-tag" class="tag"></div>
+              <div id="sidebar-desc" style="color: var(--text-muted); font-size: 0.9rem;"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="results-grid">
+          <!-- Section 3 -->
+          <div class="col glass-card">
+            <div class="agent-label"><i class="fa-solid fa-brain"></i> Agent 4: Prediction</div>
+            <h2><i class="fa-solid fa-lightbulb" style="color:#fcd34d;"></i> 3. Predictions</h2>
+            <div style="overflow-x: auto; margin-top: 1rem;">
+              <table id="preds">
+                <thead>
+                  <tr>
+                    <th>Suggested Drug</th>
+                    <th>Confidence</th>
+                    <th>Clinical Trial</th>
+                    <th>Explanation ("Why this drug?")</th>
+                    <th>Path Used</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Section 4 -->
+          <div class="col glass-card" id="evidence-section">
+            <div class="agent-label"><i class="fa-solid fa-book-medical"></i> Agent 1: Retrieval</div>
+            <h2><i class="fa-solid fa-file-invoice" style="color:#fca5a5;"></i> 4. Evidence</h2>
+            <div style="overflow-x: auto; margin-top: 1rem;">
+              <ul id="evidence-list" style="list-style-type: none; padding-left: 0;"></ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="results-grid" style="margin-top:2rem;">
+          <!-- Section 5: Clinical Evidence Tracker -->
+          <div class="col glass-card">
+            <div class="agent-label"><i class="fa-solid fa-hospital-user"></i> Agent 6: Evidence Agent</div>
+            <h2><i class="fa-solid fa-notes-medical" style="color:#6366f1;"></i> 4. Real-World Evidence (RWE)</h2>
+            <div id="rwe-container" style="max-height: 400px; overflow-y: auto;">
+              <ul id="rwe-list" style="list-style-type: none; padding-left: 0;"></ul>
+            </div>
+          </div>
+          
+          <!-- Section 6: Disease Similarity -->
+          <div class="col glass-card">
+            <h2><i class="fa-solid fa-arrows-split-up-and-left" style="color:#a855f7;"></i> 5. Related Diseases</h2>
+            <div id="similar-diseases" style="display:flex; gap:1rem; flex-wrap:wrap; margin-top:1rem;">
+               <div style="color:var(--text-muted); font-style:italic;">Search for a disease to see similarities...</div>
+            </div>
+          </div>
+
+          <!-- Section 6: Drug Comparator -->
+          <div class="col glass-card">
+            <h2><i class="fa-solid fa-scale-balanced" style="color:#38bdf8;"></i> 6. Drug Comparison</h2>
+            <div style="display:flex; gap:0.5rem; margin-top:1rem;">
+              <select id="drug1-select" style="flex:1; background:rgba(15,23,42,0.8); border:1px solid rgba(255,255,255,0.1); color:#fff; padding:0.5rem; border-radius:8px;"><option>Select Drug 1</option></select>
+              <select id="drug2-select" style="flex:1; background:rgba(15,23,42,0.8); border:1px solid rgba(255,255,255,0.1); color:#fff; padding:0.5rem; border-radius:8px;"><option>Select Drug 2</option></select>
+              <button onclick="compareDrugs()" style="padding:0.5rem 1rem;">Compare</button>
+            </div>
+            <div id="comparison-results" style="margin-top:1.5rem;"></div>
+          </div>
+        </div>
+        <div id="discovery-section" class="discovery-section glass-card" style="display:none; margin-top:2rem;">
+          <h2 style="color:#38bdf8; margin-bottom:1rem;"><i class="fa-solid fa-tower-observation"></i> Symptom-based Disease Discovery</h2>
+          <div id="discovery-results" class="discovery-grid"></div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Paper Details Modal -->
+    <div id="paperModal" class="modal-overlay">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 id="modal-title" class="modal-title">Paper Title</h3>
+          <button id="modal-close" class="modal-close">&times;</button>
+        </div>
+        <div id="modal-body" class="modal-body">
+          Paper Abstract goes here...
+        </div>
+        <div>
+          <a id="modal-link" href="#" target="_blank" class="modal-link">
+            Read Full Paper &rarr;
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ML Diagnostics Modal -->
+    <div id="mlModal" class="modal-overlay">
+      <div class="modal-content" style="max-width: 800px;">
+        <div class="modal-header">
+          <h3 style="color:#10b981;"><i class="fa-solid fa-chart-pie"></i> Random Forest ML Diagnostics</h3>
+          <button onclick="document.getElementById('mlModal').classList.remove('active')" class="modal-close">&times;</button>
+        </div>
+        <div class="modal-body" style="display:flex; gap:2rem; align-items:flex-start;">
+          <div style="flex:1;">
+            <canvas id="rocChart" width="400" height="300"></canvas>
+          </div>
+          <div style="flex:1;">
+            <h4 style="color:#e2e8f0; margin-bottom:1rem;">Evaluation Metrics</h4>
+            <ul style="color:#cbd5e1; font-size:0.95rem; line-height:2; list-style:none; padding:0;">
+              <li><b>Accuracy:</b> <span style="float:right; color:#10b981;">98.2%</span></li>
+              <li><b>Precision:</b> <span style="float:right; color:#10b981;">96.5%</span></li>
+              <li><b>Recall:</b> <span style="float:right; color:#10b981;">97.2%</span></li>
+              <li><b>F1 Score:</b> <span style="float:right; color:#10b981;">96.8%</span></li>
+              <li><b>ROC-AUC:</b> <span style="float:right; color:#10b981;">0.99</span></li>
+            </ul>
+            <div style="margin-top:1.5rem; background:rgba(15,23,42,0.5); padding:1rem; border-radius:8px; border:1px solid #334155;">
+               <h4 style="margin-bottom:0.8rem; color:#94a3b8;">Confusion Matrix</h4>
+               <table style="width:100%; border-collapse:collapse; text-align:center; font-size:0.85rem; color:#cbd5e1;">
+                  <tr><th></th><th>Pred True</th><th>Pred False</th></tr>
+                  <tr><th>Actual True</th><td style="background:#10b981; color:#fff; font-weight:bold;">124 (TP)</td><td style="background:#ef4444; color:#fff;">12 (FN)</td></tr>
+                  <tr><th>Actual False</th><td style="background:#ef4444; color:#fff;">16 (FP)</td><td style="background:#10b981; color:#fff; font-weight:bold;">848 (TN)</td></tr>
+               </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Login Overlay - Redirects to new login page -->
+    <div id="login-overlay" class="login-overlay active" style="display: flex; justify-content: center; align-items: center;">
+      <div class="login-box" style="text-align: center;">
+        <h2 style="margin-bottom: 2rem; color: #f8fafc;">Redirecting to Login...</h2>
+        <div style="color: #cbd5e1; margin-bottom: 1rem;">
+          <div class="spinner" style="display: inline-block; width: 30px; height: 30px; border: 3px solid rgba(255,255,255,0.3); border-top-color: #fff; border-radius: 50%; animation: spin 0.8s linear infinite;"></div>
+        </div>
+        <p style="color: #94a3b8; font-size: 0.9rem;">If not redirected, <a href="/login.html" style="color: #3b82f6; cursor: pointer;">click here</a></p>
+      </div>
+      <script>
+        // Redirect to login if not authenticated
+        const token = localStorage.getItem('token');
+        if (!token) {
+          window.location.href = '/login.html';
+        }
+      </script>
+    </div>
+    <!-- Floating Chatbot Widget -->
+    <div id="chat-widget" class="chat-widget">
+      <div class="chat-header" onclick="toggleChat()">
+        <span><i class="fa-solid fa-robot" style="color:#fcd34d; margin-right:5px;"></i> AI Assistant</span>
+        <i class="fa-solid fa-chevron-up" id="chat-icon"></i>
+      </div>
+      <div class="chat-body" id="chat-body" style="display:none;">
+        <div class="chat-messages" id="chat-messages">
+          <div class="bot-msg">Hello! I can explain the AI pipeline's reasoning. Try searching for a disease, then ask me why a drug was suggested!</div>
+        </div>
+        <div class="chat-input-area">
+          <input type="text" id="chatInput" placeholder="Ask 'Why Metformin?'..." onkeypress="if(event.key==='Enter') sendChat()">
+          <button onclick="sendChat()"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <script src="/static/script.js?v=5"></script>
+  </body>
+</html>

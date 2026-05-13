@@ -1,0 +1,13 @@
+drug,gene,interaction
+Remdesivir,RNA Polymerase,inhibits
+Chloroquine,ACE2,modulates
+Dexamethasone,IL-6,suppresses
+Baricitinib,JAK1,inhibits
+Baricitinib,JAK2,inhibits
+Donepezil,AChE,inhibits
+Memantine,NMDA,antagonizes
+Metformin,AMPK,activates
+Liraglutide,GLP-1,activates
+Ibuprofen,COX-2,inhibits
+Aspirin,COX-1,inhibits
+Tocilizumab,IL-6R,antagonizes

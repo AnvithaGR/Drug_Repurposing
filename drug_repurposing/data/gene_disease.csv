@@ -1,0 +1,14 @@
+gene,disease,association
+RNA Polymerase,COVID-19,pathway
+ACE2,COVID-19,receptor
+IL-6,COVID-19,cytokine
+JAK1,COVID-19,signaling
+JAK2,COVID-19,signaling
+AChE,Alzheimer's Disease,target
+NMDA,Alzheimer's Disease,receptor
+AMPK,Diabetes,metabolism
+GLP-1,Diabetes,hormone
+COX-2,Heart Disease,inflammation
+IL-6,Lung Cancer,inflammation
+JAK1,Lung Cancer,growth
+AChE,Heart Disease,regulation

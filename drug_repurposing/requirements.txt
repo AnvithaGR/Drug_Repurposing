@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+spacy
+networkx
+scikit-learn
+flask
+python-jose[cryptography]
+passlib[argon2]
+python-multipart
+pydantic-settings
+email-validator
+aiosmtplib
+
